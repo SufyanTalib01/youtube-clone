@@ -7,6 +7,7 @@
     font-family: "Roboto", sans-serif;
 }
 
+
 .main-container{
     display: flex;
     flex-direction: column;
@@ -19,9 +20,16 @@
 nav{
     display: flex;
     justify-content: space-between;
-    margin-top: 8px;
-    margin-inline: 30px;
-    padding-bottom: 20px;
+    padding-top: 8px;
+    padding-inline: 28px;
+    padding-bottom: 11px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
+    z-index: 1;
+    
 
 }
 .left-nav{
@@ -29,8 +37,19 @@ nav{
     align-items: center;
     gap: 20px;
 }
+.left-nav i{
+    font-size: 17px;
+    padding: 7px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.left-nav i:hover{
+    background-color: #e3e1e1;
+       
+}
 .left-nav img{
     height: 20px;
+    cursor: pointer;
 }
 
 /* CENTER NAVBAR  */
@@ -59,6 +78,10 @@ nav{
     border-top-right-radius: 17px;
     border-bottom-right-radius: 17px;
 }
+.search-btn:hover{
+        background-color: #e3e1e1;
+        cursor: pointer;
+}
 #search-btn-icon{
     font-size: 15px;
     color: #0F0F0F;
@@ -71,6 +94,10 @@ nav{
     border-radius: 50%;
     border: none;
     margin-left: 13px;
+}
+.mic-btn:hover{
+    background-color: #e3e1e1;
+        cursor: pointer;
 }
 #mic-btn-icon{
     font-size: 16px;
@@ -107,14 +134,14 @@ nav{
     height: 32px;
     width: 32px;
     align-content: center;
-    text-align: center;
+    cursor: pointer;
     border-radius: 50%;
     
 }
-.right-nav div:hover{
+/* .right-nav div:hover{
     background-color: #F0F0F0;
 
-}
+} */
 .right-nav div i{
     font-size: 19px;
 }
@@ -149,20 +176,25 @@ nav{
     flex-direction: row;
     position: relative;
     margin-inline: 10px;
+    overflow: hidden;
 }
 
 /* SIDE BAR MENU  */
 .sidebar{
     /* background-color: rgb(183, 144, 144); */
-    position: absolute;
-    left: 0;
+    position: fixed;
+    left: 17px;
     bottom: 0;
-    top: 0;
-    width: 225px;
+    top: 55px;
+    width: 180px;
+    height: 100vh;
+}
+.sidebar:hover{
+    overflow-y: scroll
 }
 /* HOME BUTTON  */
 .s1{
-    width: 83%;
+    width: 150px;
     height: 35px;
     background-color: rgb(239, 237, 237);
     align-content: center;
@@ -183,7 +215,7 @@ nav{
 
 /* ALL BUTTON  */
 .s2{
-    width: 83%;
+    width: 150px;
     height: 35px;
     align-content: center;
     border-radius: 6px;
@@ -215,3 +247,36 @@ nav{
     font-size: 15px;
     font-weight: 500;
 }
+
+
+
+.small-bar{
+    display: flex;
+    gap: 10px;
+    padding-inline: 15px;
+    position: fixed;
+    top: 55px;
+    left: 200px;
+    right: 0;
+    background-color: white;
+    padding-bottom: 10px;
+    
+}
+
+.b1{
+    font-weight: 500;
+    padding: 6px 7px;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    background-color: black}
+
+.b2{
+    padding-inline: 10px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+.b2:hover{
+    background-color: #e3e1e1;
+} 
