@@ -33,11 +33,18 @@ nav{
 
 }
 .left-nav{
+    margin-left: -10px;
     display: flex;
     align-items: center;
     gap: 20px;
 }
+
+.left-nav button{
+    background-color: transparent;
+    border: none;
+}
 .left-nav i{
+    margin-left: -3px;
     font-size: 17px;
     padding: 7px;
     border-radius: 50%;
@@ -179,30 +186,75 @@ nav{
     overflow: hidden;
 }
 
+
+/* MINI SIDEBAR  */
+
+.mini-sidebar{
+    position: fixed;
+    left: 0;
+    top: 60px;
+    bottom: 0;
+    width: 80px;
+    /* background-color: red; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+.mini-sidebar-content{
+    width: 60px;
+    margin-left: 1px;
+    cursor: pointer;
+    border-radius: 6px;
+    padding-block: 16px;
+    border: none;
+    background-color: white;
+}
+.mini-sidebar-content:hover{
+    background-color: #f5f4f4;
+}
+
+.mini-sidebar-content img{
+    height: 20px;
+}
+
+.mini-sidebar-content i{
+    font-size: 15px;
+    
+    
+}
+.mini-sidebar-content p{
+    font-size: 10px;
+    margin-top: 8px;
+}
+
 /* SIDE BAR MENU  */
 .sidebar{
     /* background-color: rgb(183, 144, 144); */
     position: fixed;
-    left: 17px;
+    left: 11px;
     bottom: 0;
     top: 55px;
     width: 180px;
     height: 100vh;
+    background-color: white;
+    display: none;
+    z-index: 10;
 }
 .sidebar:hover{
-    overflow-y: scroll
+    overflow-y: auto;
 }
 /* HOME BUTTON  */
 .s1{
     width: 150px;
     height: 35px;
-    background-color: rgb(239, 237, 237);
+    /* background-color: rgb(239, 237, 237); */
     align-content: center;
     border-radius: 6px;
     cursor: pointer;
 }
 .s1:hover{
-    background-color: #d1cfcf;
+    /* background-color: #d1cfcf; */
 }
 .s1 i{
     margin-left: 10px;
@@ -247,6 +299,12 @@ nav{
     font-size: 15px;
     font-weight: 500;
 }
+.activity{
+    background-color: rgb(239, 237, 237);
+}
+.activity:hover{
+    background-color: #d1cfcf;
+}
 
 
 
@@ -256,7 +314,8 @@ nav{
     padding-inline: 15px;
     position: fixed;
     top: 55px;
-    left: 200px;
+    left: 75px;
+    /* left: 200px; */
     right: 0;
     background-color: white;
     padding-bottom: 10px;
@@ -269,7 +328,8 @@ nav{
     border-radius: 6px;
     border: none;
     color: white;
-    background-color: black}
+    background-color: black;
+}
 
 .b2{
     padding-inline: 10px;

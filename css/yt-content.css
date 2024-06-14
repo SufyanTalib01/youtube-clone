@@ -1,9 +1,9 @@
 body {
     margin: 0;
     padding-top: 95px;
-    padding-left: 210px;
+    padding-left: 90px;
+    /* padding-left: 210px; */
     padding-right: 20px;
-
 }
 
 .main-content {
@@ -15,16 +15,20 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    row-gap: 30px;
+    row-gap: 50px;
+    /* row-gap: 50px; */
+    
+   
 
 }
 
 /* video div   */
 .mini-content {
-    width: 330px;
-    height: 265px;
+    width: 370px;
+    /* width: 370px; */
+    height: 275px;
     cursor: pointer;
-
+    /* background-color: red; */
 }
 
 .thumbnail {
@@ -32,7 +36,8 @@ body {
 }
 
 .thumbnail img {
-    height: 180px;
+    height: 210px;
+    /* height: 190px; */
     width: 100%;
     border-radius: 8px;
 }
@@ -41,9 +46,6 @@ body {
     display: grid;
     grid-template-columns: 50px 1fr;
 }
-
-.logo {}
-
 .title {
     display: flex;
     justify-content: space-between;
@@ -61,8 +63,31 @@ body {
     border-radius: 50%;
 }
 
-.video-data {}
+
+
+
 
 .video-data>p {
     font-size: 12px;
+}
+
+
+
+/* ACTIVE WORK  */
+
+.sidebar.active{
+    display: block;
+    background-color: white;
+}
+#small-bar.active{
+    left: 180px;
+}
+#mini-sidebar.active{
+    display: none;
+}
+.content.active{
+    padding-left: 100px;
+}
+.mini-content.active{
+    width: 340px;
 }

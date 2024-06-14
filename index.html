@@ -14,7 +14,8 @@
         <header>
             <nav>
                 <div class="left-nav">
-                    <i class="fa-solid fa-bars"></i>
+                    <button id="nav-button" onclick="NavButton()">                    <i class="fa-solid fa-bars"></i>
+                    </button>
                     <img src="img/ytlogo.png" alt="">
                 </div>
                 <div class="center-nav">
@@ -37,13 +38,33 @@
             </nav>
         </header>
 
+         <!-- Mini SIDE BAR  -->
+         <div class="mini-sidebar" id="mini-sidebar">
+            <button class="mini-sidebar-content">
+                <i class="fa-solid fa-house"></i>
+                <p>Home</p>
+            </button>
+            <button class="mini-sidebar-content">
+                <img src="img/shorts.png" alt="">
+                <p>Shorts</p>
+            </button>
+            <button class="mini-sidebar-content">
+                <i class="fa-solid fa-house"></i>
+                <p>Subscription</p>
+            </button>
+            <button class="mini-sidebar-content">
+                <i class="fa-solid fa-house"></i>
+                <p>You</p>
+            </button>
+         </div>
+
         <!-- SIDE BAR DIV  -->
-        <div class="sidebar">
-            <div class="s1">
+        <div class="sidebar" id="sidebar">
+            <div class="s2 activity">
                 <i class="fa-solid fa-house"></i>
                 <span>Home</span>
             </div>
-            <div class="s2">
+            <div class="s2 ">
                 <i class="fa-brands fa-youtube"></i>
                 <span>Shorts</span>
             </div>
@@ -111,9 +132,11 @@
             </div>
         </div>
        
+       
+
 
         <!-- SMALL BAR  -->
-        <div class="small-bar">
+        <div class="small-bar" id="small-bar">
             <button class="b1">All</button>
             
             <button class="b2">Music</button>
@@ -299,5 +322,6 @@
 
             </div>
          </div>
+         <script src="script.js"></script>
 </body>
 </html>
